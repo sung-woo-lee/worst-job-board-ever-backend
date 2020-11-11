@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contractors",
+  "info": {
+    "name": "Contractor"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Gender": {
+      "type": "enumeration",
+      "enum": [
+        "Male",
+        "Female"
+      ]
+    },
+    "Email": {
+      "type": "email"
+    },
+    "Website": {
+      "type": "string"
+    }
+  }
+}
